@@ -26,6 +26,7 @@
     },
     "dependencies": {
         "@popperjs/core": "^2.11.8",
+        "alpinejs": "^3.14.8",
         "asynckit": "^0.4.0",
         "bootstrap": "^5.3.3",
         "browserslist": "^4.24.4",

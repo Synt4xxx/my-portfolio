@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ronald Edano | Front-End Developer</title>
-    <script src="https://cdn.tailwindcss.com" defer></script>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('year').textContent = new Date().getFullYear();
         });
-    </script>
+    </script>   
 </head>
 <body class="bg-gray-100 text-gray-900">
 
@@ -19,9 +19,9 @@
         <h2 class="text-2xl mt-2">Front-End Developer | UI/UX Enthusiast</h2>
         <p class="mt-4">I craft responsive, user-friendly web interfaces with clean and modern designs.</p>
         <div class="mt-6">
-            <a href="#projects" class="bg-white text-blue-600 px-6 py-2 rounded-full shadow-md hover:bg-gray-300 transition">View My Work</a>
-            <a href="#contact" class="bg-white text-blue-600 px-6 py-2 rounded-full shadow-md ml-4 hover:bg-gray-300 transition">Hire Me</a>
-        </div>
+                <a href="#projects" class="px-4 py-2 bg-blue-600 text-white rounded-lg">View My Work</a>
+                <a href="#contact" class="px-4 py-2 bg-green-600 text-white rounded-lg ml-4">Hire Me</a>
+        </div>                
     </header>
 
     <!-- About Me Section -->
@@ -101,6 +101,20 @@
     <footer class="bg-gray-800 text-white text-center py-4 mt-12">
         <p>&copy; <span id="year"></span> Ronald Edano. All rights reserved.</p>
     </footer>
-
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 50,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script> 
 </body>
 </html>
