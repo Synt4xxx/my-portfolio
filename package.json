@@ -25,6 +25,7 @@
         "test": "tests"
     },
     "dependencies": {
+        "@heroicons/react": "^2.2.0",
         "@popperjs/core": "^2.11.8",
         "alpinejs": "^3.14.8",
         "asynckit": "^0.4.0",

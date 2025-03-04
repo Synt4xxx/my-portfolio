@@ -1,7 +1,7 @@
 <?php
+use App\Http\Controllers\PortfolioController;
+use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\ProjectController;
-
-Route::get('/', [ProjectController::class, 'index']);
-
-Route::get('/projects', [ProjectController::class, 'index']);
+Route::get('/', [PortfolioController::class, 'index'])->name('home');
+Route::get('/projects', [PortfolioController::class, 'projects'])->name('projects');
+Route::get('/contact', [PortfolioController::class, 'contact'])->name('contact');
