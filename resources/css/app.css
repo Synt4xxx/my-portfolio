@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-hero {
+    background-image: url('https://source.unsplash.com/1600x900/?technology,coding');
+    background-size: cover;
+    background-position: center;
+}
