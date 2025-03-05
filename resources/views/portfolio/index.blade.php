@@ -10,6 +10,7 @@
             document.getElementById('year').textContent = new Date().getFullYear();
         });
     </script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 <body class="bg-gray-950 text-gray-100">
 
@@ -19,9 +20,9 @@
         <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://source.unsplash.com/1600x900/?technology,coding');"></div>
         <div class="backdrop-blur-lg bg-white/10 px-10 py-14 rounded-2xl shadow-2xl">
             <div class="relative z-10 max-w-3xl mx-auto px-6">
-                <h1 class="text-6xl font-extrabold">👋 Hi, I'm Ronald Edano</h1>
-                <h2 class="text-3xl mt-4 text-gray-300">Front-End Developer | UI/UX Enthusiast</h2>
-                <p class="mt-5 text-lg text-gray-300 leading-relaxed">
+                <h1 class="hero-title text-5xl font-extrabold">👋 Hi, I'm Ronald Edano</h1>
+                <h2 class="hero-subtitle text-2xl mt-3 text-gray-300">Front-End Developer | UI/UX Enthusiast</h2>
+                                <p class="mt-5 text-lg text-gray-300 leading-relaxed">
                     I craft modern, responsive, and engaging web interfaces.
                 </p>
                 
@@ -43,8 +44,8 @@
     <!-- About Me Section -->
     <section class="min-h-[600px] flex items-center justify-center container mx-auto py-16 px-6">
         <div class="text-center">
-            <h2 class="text-4xl font-bold text-gray-100">About Me</h2>
-            <p class="mt-6 max-w-2xl mx-auto text-lg text-gray-300">
+            <h2 class="fade-in text-4xl font-bold text-gray-100">About Me</h2>
+            <p class="fade-in mt-6 max-w-2xl mx-auto text-lg text-gray-300">
                 I'm a passionate <strong>Front-End Developer</strong> from <strong>Bagong Silang, Caloocan City</strong>. 
                 I specialize in crafting beautiful and interactive web applications using modern front-end technologies.
             </p>
@@ -52,7 +53,7 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="min-h-[600px] bg-gray-800 flex items-center justify-center py-16">
+    <section id="projects" data-aos="fade-up" class="min-h-[600px] bg-gray-800 flex items-center justify-center py-16">
         <div class="container mx-auto text-center">
             <h2 class="text-4xl font-bold text-gray-100">My Projects</h2>
             <div class="flex flex-wrap justify-center gap-8 px-6 mt-8">
