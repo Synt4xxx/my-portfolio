@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ronald Edano | Front-End Developer</title>
+    <title>Ronald Edano - Frontend Developer Portfolio</title>
+<meta name="description" content="Frontend Developer specializing in Tailwind CSS and JavaScript.">
+<meta name="keywords" content="Frontend Developer, Tailwind CSS, JavaScript, Laravel">
+<meta name="author" content="Ronald Edano">
+
+<!-- Open Graph for Social Sharing -->
+<meta property="og:title" content="Ronald Edano - Portfolio">
+<meta property="og:description" content="Showcasing my best frontend development projects.">
+<meta property="og:image" content="preview-image.jpg">
+<meta property="og:url" content="https://ronaldedano.dev">
+<meta name="twitter:card" content="summary_large_image">
+
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <script>
         document.addEventListener("DOMContentLoaded", function() {
