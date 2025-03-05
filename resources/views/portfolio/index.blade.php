@@ -11,8 +11,15 @@
         });
     </script>   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-</head>
-<body class="bg-gray-950 text-gray-100">
+   
+    <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <body class="bg-gray-950 text-gray-100">
 
     <!-- Hero Section -->
     <header class="relative h-screen flex items-center justify-center text-center text-white">
@@ -33,7 +40,7 @@
                     <x-button href="#contact" variant="primary" class="px-7 py-3 sm:px-9 sm:py-4" icon="mail">
                         Hire Me
                     </x-button>
-                    <x-button href="#portfolio" variant="secondary" class="px-7 py-3 sm:px-9 sm:py-4" icon="folder">
+                    <x-button href="#skills" variant="secondary" class="px-7 py-3 sm:px-9 sm:py-4" icon="folder">
                         See Portfolio
                     </x-button>
                 </div>
@@ -46,7 +53,7 @@
     <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         
         <!-- Left Side: Profile Image -->
-        <div class="text-center md:text-left">
+        <div class="text-center md:text-left project-card">
             <img src="https://source.unsplash.com/400x400/?developer,profile" 
                 alt="Ronald Edano" 
                 class="w-64 h-64 rounded-full mx-auto md:mx-0 shadow-2xl border-4 border-purple-500">
@@ -94,7 +101,7 @@
         <div class="mt-12 space-y-10 max-w-4xl mx-auto" data-aos="fade-up">
             
             <!-- Timeline Item -->
-            <div class="relative">
+            <div class="relative project-card ">
                 <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-purple-500"></div>
                 <div class="flex flex-col md:flex-row items-center">
                     <div class="w-5 h-5 bg-purple-500 rounded-full absolute left-1/2 transform -translate-x-1/2"></div>
@@ -106,7 +113,7 @@
                 </div>
             </div>
 
-            <div class="relative">
+            <div class="relative project-card ">
                 <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-purple-500"></div>
                 <div class="flex flex-col md:flex-row items-center">
                     <div class="w-5 h-5 bg-purple-500 rounded-full absolute left-1/2 transform -translate-x-1/2"></div>
@@ -118,7 +125,7 @@
                 </div>
             </div>
 
-            <div class="relative">
+            <div class="relative project-card ">
                 <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-purple-500"></div>
                 <div class="flex flex-col md:flex-row items-center">
                     <div class="w-5 h-5 bg-purple-500 rounded-full absolute left-1/2 transform -translate-x-1/2"></div>
@@ -135,89 +142,112 @@
 </section>
 
 <!-- Projects Section -->
-<section id="projects" class="bg-gray-800 py-16 px-6">
-    <div class="container mx-auto text-center">
-        <h2 class="text-4xl font-bold text-gray-100">My Projects</h2>
-        <p class="mt-2 text-lg text-gray-400">Here are some of the projects I have built.</p>
+<section id="projects" class="py-12 bg-gray-900 text-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-6">My Projects</h2>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 mt-10">
-            
-            <!-- Project Card 1 -->
-            <div class="project-card bg-gray-700 p-6 rounded-xl shadow-lg transition transform hover:-translate-y-2 hover:shadow-2xl">
-                <img src="https://source.unsplash.com/400x250/?website,technology" alt="Project Image" class="w-full h-48 object-cover rounded-lg">
-                <h3 class="text-2xl font-semibold text-purple-400 mt-4">🌐 Portfolio Website</h3>
-                <p class="mt-2 text-gray-300">A fully responsive portfolio built with HTML, CSS, JavaScript, and Tailwind CSS.</p>
-                
-                <div class="mt-3 flex flex-wrap gap-2">
-                    <span class="badge">HTML</span>
-                    <span class="badge">TailwindCSS</span>
-                    <span class="badge">JavaScript</span>
+        <!-- Swiper Container -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <!-- Project 1 -->
+                <div class="swiper-slide bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <img src="project1.jpg" alt="Project 1" class="w-full h-48 object-cover rounded-md">
+                    <h3 class="text-xl font-semibold mt-4">Project One</h3>
+                    <p class="text-gray-400 text-sm mt-2">A brief description of the project.</p>
+                    <a href="#" class="mt-4 inline-block text-blue-400 hover:text-blue-300">View Project</a>
                 </div>
 
-                <div class="mt-5 flex justify-between">
-                    <a href="https://github.com/yourusername/portfolio" target="_blank" class="project-btn">GitHub</a>
-                    <a href="https://ronald-portfolio.com" target="_blank" class="project-btn">Live Demo</a>
-                </div>
-            </div>
-
-            <!-- Project Card 2 -->
-            <div class="project-card bg-gray-700 p-6 rounded-xl shadow-lg transition transform hover:-translate-y-2 hover:shadow-2xl">
-                <img src="https://source.unsplash.com/400x250/?app,code" alt="Project Image" class="w-full h-48 object-cover rounded-lg">
-                <h3 class="text-2xl font-semibold text-purple-400 mt-4">📱 Task Manager App</h3>
-                <p class="mt-2 text-gray-300">A feature-rich task management app with Vue.js and Firebase.</p>
-
-                <div class="mt-3 flex flex-wrap gap-2">
-                    <span class="badge">Vue.js</span>
-                    <span class="badge">Firebase</span>
-                    <span class="badge">TailwindCSS</span>
+                <!-- Project 2 -->
+                <div class="swiper-slide bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <img src="project2.jpg" alt="Project 2" class="w-full h-48 object-cover rounded-md">
+                    <h3 class="text-xl font-semibold mt-4">Project Two</h3>
+                    <p class="text-gray-400 text-sm mt-2">A brief description of the project.</p>
+                    <a href="#" class="mt-4 inline-block text-blue-400 hover:text-blue-300">View Project</a>
                 </div>
 
-                <div class="mt-5 flex justify-between">
-                    <a href="https://github.com/yourusername/task-manager" target="_blank" class="project-btn">GitHub</a>
-                    <a href="https://taskmanager-app.com" target="_blank" class="project-btn">Live Demo</a>
+                <!-- Project 3 -->
+                <div class="swiper-slide bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <img src="project3.jpg" alt="Project 3" class="w-full h-48 object-cover rounded-md">
+                    <h3 class="text-xl font-semibold mt-4">Project Three</h3>
+                    <p class="text-gray-400 text-sm mt-2">A brief description of the project.</p>
+                    <a href="#" class="mt-4 inline-block text-blue-400 hover:text-blue-300">View Project</a>
                 </div>
             </div>
 
-            <!-- Project Card 3 -->
-            <div class="project-card bg-gray-700 p-6 rounded-xl shadow-lg transition transform hover:-translate-y-2 hover:shadow-2xl">
-                <img src="https://source.unsplash.com/400x250/?dashboard,design" alt="Project Image" class="w-full h-48 object-cover rounded-lg">
-                <h3 class="text-2xl font-semibold text-purple-400 mt-4">📊 Admin Dashboard</h3>
-                <p class="mt-2 text-gray-300">An interactive dashboard built with React and Chart.js.</p>
+            <!-- Navigation Buttons -->
+            <div class="swiper-button-next text-white"></div>
+            <div class="swiper-button-prev text-white"></div>
 
-                <div class="mt-3 flex flex-wrap gap-2">
-                    <span class="badge">React</span>
-                    <span class="badge">Chart.js</span>
-                    <span class="badge">TailwindCSS</span>
-                </div>
-
-                <div class="mt-5 flex justify-between">
-                    <a href="https://github.com/yourusername/admin-dashboard" target="_blank" class="project-btn">GitHub</a>
-                    <a href="https://admindashboard.com" target="_blank" class="project-btn">Live Demo</a>
-                </div>
-            </div>
-
+            <!-- Pagination Dots -->
+            <div class="swiper-pagination"></div>
         </div>
     </div>
 </section>
 
     <!-- Skills Section -->
-    <section class="min-h-[600px] flex items-center justify-center container mx-auto py-16 px-6">
-        <div class="mt-8">
-            <h3 class="text-2xl font-semibold text-gray-200">My Skills</h3>
-            <div class="mt-4">
-                <p class="text-gray-300">HTML & CSS</p>
-                <div class="w-full bg-gray-700 h-2 rounded-lg overflow-hidden">
-                    <div class="bg-purple-500 h-full skill-bar" style="width: 0%;" data-width="90%"></div>
+    <section id="skills" class="py-12 bg-gray-900 text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-6">My Skills</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
+                <!-- Skill Item -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md aos-init aos-animate project-card" data-aos="fade-up">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <i class="fab fa-html5 text-orange-500 text-4xl"></i>
+                        <h3 class="text-xl font-semibold">HTML</h3>
+                    </div>
+                    <div class="relative w-full bg-gray-700 h-3 rounded-full">
+                        <div class="bg-orange-500 h-3 rounded-full progress-bar" style="width: 90%;"></div>
+                    </div>
+                    <p class="mt-2 text-sm text-gray-400">90% Proficiency</p>
                 </div>
-            </div>
-            <div class="mt-4">
-                <p class="text-gray-300">JavaScript</p>
-                <div class="w-full bg-gray-700 h-2 rounded-lg overflow-hidden">
-                    <div class="bg-blue-500 h-full skill-bar" style="width: 0%;" data-width="85%"></div>
+    
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <i class="fab fa-css3-alt text-blue-500 text-4xl"></i>
+                        <h3 class="text-xl font-semibold">CSS</h3>
+                    </div>
+                    <div class="relative w-full bg-gray-700 h-3 rounded-full">
+                        <div class="bg-blue-500 h-3 rounded-full progress-bar" style="width: 85%;"></div>
+                    </div>
+                    <p class="mt-2 text-sm text-gray-400">85% Proficiency</p>
+                </div>
+    
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <i class="fab fa-js-square text-yellow-500 text-4xl"></i>
+                        <h3 class="text-xl font-semibold">JavaScript</h3>
+                    </div>
+                    <div class="relative w-full bg-gray-700 h-3 rounded-full">
+                        <div class="bg-yellow-500 h-3 rounded-full progress-bar" style="width: 80%;"></div>
+                    </div>
+                    <p class="mt-2 text-sm text-gray-400">80% Proficiency</p>
+                </div>
+    
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <i class="fab fa-react text-cyan-400 text-4xl"></i>
+                        <h3 class="text-xl font-semibold">React</h3>
+                    </div>
+                    <div class="relative w-full bg-gray-700 h-3 rounded-full">
+                        <div class="bg-cyan-400 h-3 rounded-full progress-bar" style="width: 75%;"></div>
+                    </div>
+                    <p class="mt-2 text-sm text-gray-400">75% Proficiency</p>
+                </div>
+    
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <i class="fab fa-laravel text-red-500 text-4xl"></i>
+                        <h3 class="text-xl font-semibold">Laravel</h3>
+                    </div>
+                    <div class="relative w-full bg-gray-700 h-3 rounded-full">
+                        <div class="bg-red-500 h-3 rounded-full progress-bar" style="width: 70%;"></div>
+                    </div>
+                    <p class="mt-2 text-sm text-gray-400">70% Proficiency</p>
                 </div>
             </div>
         </div>
-            </section>
+    </section>    
 
 <!-- Contact Section -->
 <section id="contact" class="min-h-[200px] flex items-center justify-center container mx-auto py-6 px-6">
@@ -234,10 +264,7 @@
     </footer>
     
     <!-- Scroll to Top Button -->
-    <button id="scrollToTopBtn" class="fixed bottom-6 right-6 bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-lg hidden transition-opacity duration-300">
-        ↑
-    </button>
-    
+    <button id="scrollToTopBtn">↑</button>    
 
 </body>
 </html>

@@ -63,20 +63,86 @@ if ('scrollRestoration' in history) {
     history.scrollRestoration = 'manual';
 }
 document.addEventListener("DOMContentLoaded", function () {
+    var swiper = new Swiper(".mySwiper", {
+        loop: true, // Infinite scrolling
+        spaceBetween: 20,
+        slidesPerView: 1, // Show 1 slide on mobile
+        centeredSlides: true,
+        autoplay: {
+            delay: 3000, // Auto slide every 3 sec
+            disableOnInteraction: false, // Keep autoplay after interaction
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            640: { slidesPerView: 1 }, // 1 slide on small screens
+            768: { slidesPerView: 2 }, // 2 slides on tablets
+            1024: { slidesPerView: 3 }, // 3 slides on desktops
+        },
+    });
+});
+document.addEventListener("DOMContentLoaded", function () {
+    // Swiper Initialization
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+    });
+});
+document.addEventListener("DOMContentLoaded", function () {
     const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
-    // Show/hide button on scroll
     window.addEventListener("scroll", function () {
         if (window.scrollY > 300) {
-            scrollToTopBtn.classList.remove("hidden");
-            scrollToTopBtn.classList.add("opacity-100");
+            scrollToTopBtn.classList.add("show");
         } else {
-            scrollToTopBtn.classList.add("hidden");
-            scrollToTopBtn.classList.remove("opacity-100");
+            scrollToTopBtn.classList.remove("show");
         }
     });
 
-    // Scroll to top on click
+    scrollToTopBtn.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+});
+document.addEventListener("DOMContentLoaded", function () {
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    const progressBar = document.getElementById("progressBar");
+
+    window.addEventListener("scroll", function () {
+        let scrollTop = window.scrollY;
+        let docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        let scrollPercent = (scrollTop / docHeight) * 100;
+
+        // Update progress bar width
+        progressBar.style.width = scrollPercent + "%";
+
+        // Show/hide Scroll to Top button
+        if (scrollTop > 300) {
+            scrollToTopBtn.classList.add("show");
+        } else {
+            scrollToTopBtn.classList.remove("show");
+        }
+    });
+
+    // Scroll to top smoothly
     scrollToTopBtn.addEventListener("click", function () {
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
