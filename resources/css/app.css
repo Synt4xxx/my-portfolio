@@ -16,3 +16,32 @@
     opacity: 1;
     transform: translateY(0);
 }
+.project-card {
+    transition: all 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-btn {
+    background-color: #7c3aed;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    transition: background 0.3s;
+    text-decoration: none;
+}
+
+.project-btn:hover {
+    background-color: #5a2ea0;
+}
+
+.badge {
+    background: rgba(124, 58, 237, 0.2);
+    color: #7c3aed;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
