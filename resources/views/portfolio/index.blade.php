@@ -61,12 +61,13 @@
 <section id="about" class="min-h-screen flex items-center justify-center bg-gray-900 py-16 px-6">
     <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         
-        <!-- Left Side: Profile Image -->
-        <div class="text-center md:text-left project-card">
-            <img src="https://source.unsplash.com/400x400/?developer,profile" 
-                alt="Ronald Edano" 
-                class="w-64 h-64 rounded-full mx-auto md:mx-0 shadow-2xl border-4 border-purple-500">
-        </div>
+<!-- Left Side: Profile Image -->
+<div class="text-center md:text-left project-card">
+    <img src="{{ asset('images/RN2X2.jpg') }}" 
+    alt="Ronald Edano's Profile Picture" 
+    title="Ronald Edano - Front-End Developer"
+    class="w-64 h-64 rounded-full mx-auto md:mx-0 shadow-2xl border-4 border-purple-500">
+</div>
 
         <!-- Right Side: About Text -->
         <div class="mt-6" data-aos="fade-up">
@@ -103,52 +104,72 @@
     </div>
 </section>
 
-<!-- Experience Timeline -->
+<!-- Work Experience Timeline -->
 <section id="experience" class="bg-gray-800 py-16 px-6">
     <div class="container mx-auto text-center">
-        <h2 class="text-4xl font-bold text-gray-100">My Journey</h2>
-        <div class="mt-12 space-y-10 max-w-4xl mx-auto" data-aos="fade-up">
-            
-            <!-- Timeline Item -->
-            <div class="relative project-card ">
-                <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-purple-500"></div>
-                <div class="flex flex-col md:flex-row items-center">
-                    <div class="w-5 h-5 bg-purple-500 rounded-full absolute left-1/2 transform -translate-x-1/2"></div>
-                    <div class="w-full md:w-1/2 text-right pr-6">
-                        <h3 class="text-xl font-semibold text-gray-100">Started Learning Web Development</h3>
-                        <p class="text-gray-300">Began my journey into coding with HTML, CSS, and JavaScript.</p>
-                        <span class="text-gray-400">2019</span>
-                    </div>
+        <h2 class="text-4xl font-bold text-gray-100">Work Experience</h2>
+        <div class="mt-12 relative max-w-4xl mx-auto" data-aos="fade-up">
+
+            <!-- Timeline Line -->
+            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-1 h-full bg-purple-500"></div>
+
+            <!-- Latest: Dental Insurance Verification Specialist (Left Side) -->
+            <div class="project-card relative flex items-center mb-12 flex-row-reverse">
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-purple-500 rounded-full"></div>
+                <div class="w-full md:w-1/2 text-left pl-8">
+                    <h3 class="text-xl font-semibold text-gray-100">Dental Insurance Verification Specialist</h3>
+                    <p class="text-gray-300">CAMBE DENTAL BILLING SERVICES, INC.</p>
+                    <span class="text-gray-400">July 2024 - January 2025</span>
+                    <ul class="text-gray-300 text-sm mt-2 space-y-2">
+                        <li>Verified patient insurance eligibility and coverage.</li>
+                        <li>Explained insurance benefits to patients.</li>
+                        <li>Maintained accurate patient records and logs.</li>
+                        <li>Resolved denied claims with investigations.</li>
+                        <li>Ensured HIPAA compliance and confidentiality.</li>
+                        <li>Collaborated with dentists and administrative staff.</li>
+                        <li>Used dental software like Dentrix and Softdent.</li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="relative project-card ">
-                <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-purple-500"></div>
-                <div class="flex flex-col md:flex-row items-center">
-                    <div class="w-5 h-5 bg-purple-500 rounded-full absolute left-1/2 transform -translate-x-1/2"></div>
-                    <div class="w-full md:w-1/2 text-left pl-6">
-                        <h3 class="text-xl font-semibold text-gray-100">Built First Full Website</h3>
-                        <p class="text-gray-300">Created my first responsive website using Tailwind CSS and JavaScript.</p>
-                        <span class="text-gray-400">2021</span>
-                    </div>
+            <!-- Middle: Support Engineer II - Asset Management (Right Side) -->
+            <div class="project-card relative flex items-center mb-12">
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-purple-500 rounded-full"></div>
+                <div class="w-full md:w-1/2 text-right pr-8">
+                    <h3 class="text-xl font-semibold text-gray-100">Support Engineer II - Asset Management</h3>
+                    <p class="text-gray-300">TAP Services Inc.</p>
+                    <span class="text-gray-400">January 2024 - July 2024</span>
+                    <ul class="text-gray-300 text-sm mt-2 space-y-2">
+                        <li>Implemented an asset management system.</li>
+                        <li>Provided technical support to warehouse staff.</li>
+                        <li>Conducted asset audits for compliance.</li>
+                        <li>Developed documentation for asset procedures.</li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="relative project-card ">
-                <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-purple-500"></div>
-                <div class="flex flex-col md:flex-row items-center">
-                    <div class="w-5 h-5 bg-purple-500 rounded-full absolute left-1/2 transform -translate-x-1/2"></div>
-                    <div class="w-full md:w-1/2 text-right pr-6">
-                        <h3 class="text-xl font-semibold text-gray-100">Freelancing & UI/UX Focus</h3>
-                        <p class="text-gray-300">Worked with clients to build modern web applications.</p>
-                        <span class="text-gray-400">2023</span>
-                    </div>
+            <!-- Oldest: Junior Front-End Developer (Left Side) -->
+            <div class="project-card relative flex items-center mb-12 flex-row-reverse">
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-purple-500 rounded-full"></div>
+                <div class="w-full md:w-1/2 text-left pl-8">
+                    <h3 class="text-xl font-semibold text-gray-100">Junior Front-End Developer</h3>
+                    <p class="text-gray-300">DR. JOSE N. RODRIGUEZ MEMORIAL HOSPITAL AND SANITARIUM</p>
+                    <span class="text-gray-400">July 2023 - Dec 2023</span>
+                    <ul class="text-gray-300 text-sm mt-2 space-y-2">
+                        <li>Designed the hospital's appointment system website.</li>
+                        <li>Developed a user-friendly scheduling interface.</li>
+                        <li>Collaborated with healthcare teams for requirements.</li>
+                        <li>Conducted testing to ensure performance and usability.</li>
+                        <li>Used modern front-end technologies for UI/UX improvements.</li>
+                        <li>Communicated with stakeholders for feedback.</li>
+                    </ul>
                 </div>
             </div>
 
         </div>
     </div>
 </section>
+
 
 <!-- Projects Section -->
 <section id="projects" class="py-12 bg-gray-900 text-white">
