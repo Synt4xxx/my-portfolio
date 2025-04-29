@@ -187,9 +187,72 @@
                     <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white tracking-tight">
                         👋 Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-400 dark:to-blue-400">Ronald Edano</span>
                     </h1>
-                    <h2 class="text-lg sm:text-xl md:text-2xl text-gray-700 dark:text-gray-200 font-medium">
-                        Front-End Developer & UI/UX Enthusiast
-                    </h2>
+
+                    <h2 class="text-4xl font-bold text-gray-800 dark:text-white">
+                        <span id="typewriter"></span><span class="cursor">|</span>
+                      </h2>
+                      
+                      <script>
+                      const words = [
+                        "Web Developer",
+                        "UI/UX Enthusiast",
+                        "Graphic Designer"
+                      ];
+                      
+                      let i = 0;
+                      let j = 0;
+                      let isDeleting = false;
+                      
+                      function stripHTML(html) {
+                        let div = document.createElement("div");
+                        div.innerHTML = html;
+                        return div.textContent || div.innerText || "";
+                      }
+                      
+                      function getVisibleSubstring(word, length) {
+                        const text = stripHTML(word);
+                        const visiblePart = text.substring(0, length);
+                      
+                        if (word.includes("<span")) {
+               
+                          const start = word.indexOf("<span");
+                          const end = word.indexOf("</span>") + 7;
+                          const htmlPart = word.substring(start, end);
+                          const stripped = stripHTML(htmlPart);
+                          const visibleName = stripped.substring(0, length - 9); 
+                      
+                          const fullPrefix = `👋 Hi, I'm `;
+                          return fullPrefix + `<span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-400 dark:to-blue-400">${visibleName}</span>`;
+                        }
+                      
+                        return visiblePart;
+                      }
+                      
+                      function type() {
+                        const currentWord = words[i];
+                        const textElement = document.getElementById("typewriter");
+                        const fullText = stripHTML(currentWord);
+                      
+                        if (isDeleting) {
+                          j--;
+                          if (j <= 0) {
+                            isDeleting = false;
+                            i = (i + 1) % words.length;
+                          }
+                        } else {
+                          j++;
+                          if (j >= fullText.length) {
+                            isDeleting = true;
+                          }
+                        }
+                      
+                        textElement.innerHTML = getVisibleSubstring(currentWord, j);
+                      
+                        setTimeout(type, 120);
+                      }
+                      
+                      type();
+                      </script>                      
                 </div>
 
                 <!-- Description -->
@@ -272,7 +335,7 @@
                             <div class="flex items-center space-x-4">
                                 <div class="flex-1">
                                     <h4 class="text-white font-semibold">Ronald Edano</h4>
-                                    <p class="text-gray-300 text-sm">Frontend Developer</p>
+                                    <p class="text-gray-300 text-sm">Web Developer</p>
                                 </div>
                                 <div class="flex space-x-3">
                                     <a href="https://github.com/ronaldedano" target="_blank" class="text-white hover:text-purple-400 transition-colors">
@@ -291,11 +354,11 @@
                 <div class="absolute -right-6 top-1/4 z-20 transform translate-x-full md:translate-x-0 group-hover:translate-x-0 transition-transform duration-500">
                     <div class="space-y-4">
                         <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg">
-                            <div class="text-3xl font-bold text-purple-600 dark:text-purple-400">2+</div>
+                            <div class="text-3xl font-bold text-purple-600 dark:text-purple-400">1+</div>
                             <div class="text-sm text-gray-600 dark:text-gray-300">Years Experience</div>
                         </div>
                         <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg">
-                            <div class="text-3xl font-bold text-blue-600 dark:text-blue-400">15+</div>
+                            <div class="text-3xl font-bold text-blue-600 dark:text-blue-400">3</div>
                             <div class="text-sm text-gray-600 dark:text-gray-300">Projects Completed</div>
                         </div>
                     </div>
