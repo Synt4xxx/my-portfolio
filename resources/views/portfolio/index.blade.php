@@ -269,7 +269,6 @@
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-5 h-5" title="HTML5">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="w-5 h-5" title="CSS3">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-5 h-5" title="JavaScript">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="w-5 h-5" title="React">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" class="w-5 h-5" title="Tailwind CSS">
                     </div>
                 </div>
@@ -370,7 +369,7 @@
                 <!-- Bio -->
                 <div class="prose prose-lg dark:prose-invert">
                     <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                        I'm a passionate <span class="text-purple-600 dark:text-purple-400 font-semibold">Front-End Developer</span> based in 
+                        I'm a passionate <span class="text-purple-600 dark:text-purple-400 font-semibold">Web Developer</span> based in 
                         <span class="text-purple-600 dark:text-purple-400 font-semibold">Bagong Silang, Caloocan City</span>. 
                         I specialize in crafting beautiful and interactive web applications using modern front-end technologies.
                     </p>
@@ -400,18 +399,6 @@
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-8 h-8">
                             </div>
                             <span class="mt-2 text-sm text-gray-600 dark:text-gray-400">JavaScript</span>
-                        </div>
-                        <div class="group flex flex-col items-center">
-                            <div class="p-3 rounded-xl bg-white dark:bg-gray-800 shadow-lg group-hover:shadow-cyan-500/20 transition-shadow">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="w-8 h-8">
-                            </div>
-                            <span class="mt-2 text-sm text-gray-600 dark:text-gray-400">React</span>
-                        </div>
-                        <div class="group flex flex-col items-center">
-                            <div class="p-3 rounded-xl bg-white dark:bg-gray-800 shadow-lg group-hover:shadow-teal-500/20 transition-shadow">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" class="w-8 h-8">
-                            </div>
-                            <span class="mt-2 text-sm text-gray-600 dark:text-gray-400">Vue.js</span>
                         </div>
                         <div class="group flex flex-col items-center">
                             <div class="p-3 rounded-xl bg-white dark:bg-gray-800 shadow-lg group-hover:shadow-sky-500/20 transition-shadow">
@@ -507,11 +494,7 @@
                             </li>
                             <li class="flex items-start">
                                 <span class="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-purple-500 mr-3"></span>
-                                <span class="text-gray-700 dark:text-gray-300">Explained insurance benefits to patients</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-purple-500 mr-3"></span>
-                                <span class="text-gray-700 dark:text-gray-300">Maintained accurate patient records and logs</span>
+                                <span class="text-gray-700 dark:text-gray-300">Maintained accurate patient records</span>
                             </li>
                             <li class="flex items-start">
                                 <span class="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-purple-500 mr-3"></span>
@@ -519,7 +502,7 @@
                             </li>
                     </ul>
                         <div class="mt-4 flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-sm rounded-full">HIPAA</span>
+                            <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-sm rounded-full">PDF Editor</span>
                             <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-sm rounded-full">Dentrix</span>
                             <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-sm rounded-full">Softdent</span>
                         </div>
@@ -600,9 +583,9 @@
                             </li>
                     </ul>
                         <div class="mt-4 flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-pink-100 dark:bg-pink-900/30 text-pink-700 dark:text-pink-300 text-sm rounded-full">Laravel</span>
-                            <span class="px-3 py-1 bg-pink-100 dark:bg-pink-900/30 text-pink-700 dark:text-pink-300 text-sm rounded-full">Vue.js</span>
-                            <span class="px-3 py-1 bg-pink-100 dark:bg-pink-900/30 text-pink-700 dark:text-pink-300 text-sm rounded-full">UI/UX</span>
+                            <span class="px-3 py-1 bg-pink-100 dark:bg-pink-900/30 text-pink-700 dark:text-pink-300 text-sm rounded-full">PHP</span>
+                            <span class="px-3 py-1 bg-pink-100 dark:bg-pink-900/30 text-pink-700 dark:text-pink-300 text-sm rounded-full">JavaScript</span>
+                            <span class="px-3 py-1 bg-pink-100 dark:bg-pink-900/30 text-pink-700 dark:text-pink-300 text-sm rounded-full">CSS</span>
                         </div>
                     </div>
                 </div>
@@ -648,7 +631,7 @@
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <div class="absolute bottom-4 left-4 right-4">
                             <div class="flex gap-2">
-                                <a href="https://talatelemed.com" target="_blank" 
+                                <a href="https://talatelemedconsult.com" target="_blank" 
                                    class="px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-white text-sm hover:bg-white/30 transition-colors">
                                     <i class="fas fa-external-link-alt mr-1"></i> Visit Site
                                 </a>
@@ -672,10 +655,10 @@
                     </p>
 
                     <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-2 py-1 bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-300 text-xs rounded-full">Laravel</span>
-                        <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-xs rounded-full">Vue.js</span>
-                        <span class="px-2 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-xs rounded-full">Tailwind CSS</span>
-                        <span class="px-2 py-1 bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 text-xs rounded-full">MySQL</span>
+                        <span class="px-2 py-1 bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 text-xs rounded-full">PHP</span>
+                        <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-xs rounded-full">HTML</span>
+                        <span class="px-2 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-xs rounded-full">CSS</span>
+                        <span class="px-2 py-1 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-300 text-xs rounded-full">JavaScript</span>
                     </div>
 
                     <div class="space-y-4">
@@ -685,19 +668,11 @@
                             <ul class="text-sm text-gray-600 dark:text-gray-300 space-y-2">
                                 <li class="flex items-start">
                                     <span class="flex-shrink-0 w-1.5 h-1.5 mt-2 rounded-full bg-purple-500 mr-2"></span>
-                                    Smart appointment scheduling system
+                                    Online appointment scheduling system
                                 </li>
                                 <li class="flex items-start">
                                     <span class="flex-shrink-0 w-1.5 h-1.5 mt-2 rounded-full bg-purple-500 mr-2"></span>
                                     Secure patient health records management
-                                </li>
-                                <li class="flex items-start">
-                                    <span class="flex-shrink-0 w-1.5 h-1.5 mt-2 rounded-full bg-purple-500 mr-2"></span>
-                                    E-prescription and medical documentation
-                                </li>
-                                <li class="flex items-start">
-                                    <span class="flex-shrink-0 w-1.5 h-1.5 mt-2 rounded-full bg-purple-500 mr-2"></span>
-                                    Patient-provider messaging system
                                 </li>
                             </ul>
                         </div>
@@ -714,10 +689,6 @@
                                     <span class="flex-shrink-0 w-1.5 h-1.5 mt-2 rounded-full bg-blue-500 mr-2"></span>
                                     Real-time notifications system
                                 </li>
-                                <li class="flex items-start">
-                                    <span class="flex-shrink-0 w-1.5 h-1.5 mt-2 rounded-full bg-blue-500 mr-2"></span>
-                                    Responsive SPA using Vue.js & Laravel
-                                </li>
                             </ul>
                         </div>
                     </div>
@@ -728,7 +699,7 @@
             <article class="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
                 <div class="relative overflow-hidden">
                     <img 
-                        src="{{ asset('images/projects/ticketing.jpg') }}" 
+                        src="{{ asset('images/Compalint.png') }}" 
                         alt="Complaint Ticketing System"
                         class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300"
                     >
@@ -751,10 +722,11 @@
                     </p>
 
                     <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-2 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-xs rounded-full">PHP</span>
-                        <span class="px-2 py-1 bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 text-xs rounded-full">MySQL</span>
-                        <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-xs rounded-full">Bootstrap</span>
-                    </div>
+                        <span class="px-2 py-1 bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 text-xs rounded-full">PHP</span>
+                        <span class="px-2 py-1 bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-300 text-xs rounded-full">Laravel</span>
+                        <span class="px-2 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-xs rounded-full">Tailwind</span>
+                         <span class="px-2 py-1 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-300 text-xs rounded-full">JavaScript</span>
+            </div>
 
                     <ul class="text-sm text-gray-600 dark:text-gray-300 space-y-2">
                         <li class="flex items-start">
@@ -881,27 +853,6 @@
                         Frameworks & Libraries
                     </h4>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <!-- React -->
-                        <div class="group bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
-                            <div class="flex items-center justify-between mb-4">
-                                <div class="flex items-center">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="w-8 h-8 mr-3">
-                                    <h5 class="text-lg font-semibold text-gray-900 dark:text-white">React</h5>
-                                </div>
-                                <span class="text-cyan-600 dark:text-cyan-400 font-semibold">75%</span>
-                            </div>
-                            <div class="h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
-                                <div class="h-full bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full transform origin-left transition-transform duration-500 group-hover:scale-x-100" style="width: 75%"></div>
-                            </div>
-                            <div class="mt-4 text-sm text-gray-600 dark:text-gray-300">
-                                <ul class="space-y-1">
-                                    <li>• Hooks & Context</li>
-                                    <li>• State Management</li>
-                                    <li>• Component Lifecycle</li>
-                                </ul>
-                            </div>
-                        </div>
-
                         <!-- Laravel -->
                         <div class="group bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
                             <div class="flex items-center justify-between mb-4">
@@ -973,7 +924,7 @@
 <section id="contact" class="min-h-[200px] flex items-center justify-center container mx-auto py-6 px-6">
     <div class="text-center">
         <h2 class="text-3xl font-bold text-gray-100">Contact Me</h2>
-        <p class="mt-2 text-lg">📧 Email: <a href="mailto:ronald.edano@example.com" class="text-blue-400 hover:text-blue-300">ronald.edano@example.com</a></p>
+        <p class="mt-2 text-lg">📧 Email: <a href="mailto:ronaldedano9919@gmail.com" class="text-blue-400 hover:text-blue-300">ronald.edano@example.com</a></p>
         <p class="mt-1 text-lg">💼 LinkedIn: <a href="https://linkedin.com/in/ronaldedano" class="text-blue-400 hover:text-blue-300">linkedin.com/in/ronaldedano</a></p>
         <p class="mt-1 text-lg">🐙 GitHub: <a href="https://github.com/ronaldedano" class="text-blue-400 hover:text-blue-300">github.com/ronaldedano</a></p>
     </div>
