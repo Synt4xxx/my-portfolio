@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <title>Ronald Edano - Frontend Developer Portfolio</title>
-<meta name="description" content="Frontend Developer specializing in Tailwind CSS and JavaScript.">
-<meta name="keywords" content="Frontend Developer, Tailwind CSS, JavaScript, Laravel">
+<meta name="description" content="Web Developer specializing in PHP, Laravel, Tailwind, CSS and JavaScript.">
+<meta name="keywords" content="Web Developer, TPHP, Laravel, Tailwind, CSS and JavaScript.">
 <meta name="author" content="Ronald Edano">
 
 <!-- Open Graph for Social Sharing -->
 <meta property="og:title" content="Ronald Edano - Portfolio">
-<meta property="og:description" content="Showcasing my best frontend development projects.">
+<meta property="og:description" content="Showcasing my best Web development projects.">
 <meta property="og:image" content="preview-image.jpg">
 <meta property="og:url" content="https://ronaldedano.dev">
 <meta name="twitter:card" content="summary_large_image">
@@ -269,7 +269,8 @@
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-5 h-5" title="HTML5">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="w-5 h-5" title="CSS3">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-5 h-5" title="JavaScript">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" class="w-5 h-5" title="Tailwind CSS">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" class="w-5 h-5" title="PHP">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" class="w-5 h-5" title="Laravel">
                     </div>
                 </div>
 
@@ -509,7 +510,7 @@
                     </div>
                 </div>
             </div>
-
+                                                    
             <!-- Middle Experience -->
             <div class="relative mb-16 group">
                 <div class="flex items-center justify-center mb-4">
@@ -624,7 +625,7 @@
                         </span>
                     </div>
                     <img 
-                        src="{{ asset('images/projects/talatelemed.jpg') }}" 
+                        src="{{ asset('images/talatelemed.png') }}" 
                         alt="Talatelemed - Healthcare Platform"
                         class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300"
                     >
@@ -699,9 +700,9 @@
             <article class="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
                 <div class="relative overflow-hidden">
                     <img 
-                        src="{{ asset('images/Compalint.png') }}" 
+                        src="{{ asset('images/Complaint.png') }}" 
                         alt="Complaint Ticketing System"
-                        class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300"
+                        class="w-full h-48 object-cover-cnet transform group-hover:scale-110 transition-transform duration-300"
                     >
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <div class="absolute bottom-4 left-4 right-4">
@@ -755,11 +756,6 @@
 
     <!-- Skills Section -->
     <section id="skills" class="relative py-20 bg-gray-50 dark:bg-gray-900">
-        <!-- Background Elements -->
-        <div class="absolute inset-0 dark:opacity-20">
-            <div class="absolute inset-y-0 right-0 w-1/2 bg-gradient-to-l from-purple-50 to-transparent dark:from-purple-900/20"></div>
-            <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-purple-500/20 to-transparent"></div>
-        </div>
 
         <div class="container mx-auto px-6">
             <!-- Section Header -->
@@ -778,9 +774,9 @@
                 <div class="mb-12">
                     <h4 class="text-xl font-semibold text-gray-900 dark:text-white mb-6 flex items-center">
                         <i class="fas fa-code text-purple-500 mr-3"></i>
-                        Frontend Development
+                        Website Development
                     </h4>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
                         <!-- HTML -->
                         <div class="group bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
                             <div class="flex items-center justify-between mb-4">
@@ -788,20 +784,41 @@
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-8 h-8 mr-3">
                                     <h5 class="text-lg font-semibold text-gray-900 dark:text-white">HTML5</h5>
                                 </div>
-                                <span class="text-purple-600 dark:text-purple-400 font-semibold">90%</span>
+                                <span class="text-purple-600 dark:text-purple-400 font-semibold">80%</span>
                             </div>
                             <div class="h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
-                                <div class="h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-full transform origin-left transition-transform duration-500 group-hover:scale-x-100" style="width: 90%"></div>
+                                <div class="h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-full" style="width: 80%"></div>
                             </div>
                             <div class="mt-4 text-sm text-gray-600 dark:text-gray-300">
                                 <ul class="space-y-1">
-                                    <li>• Semantic HTML</li>
-                                    <li>• Accessibility (ARIA)</li>
-                                    <li>• SEO Best Practices</li>
+                                    <li>• Semantic Markup</li>
+                                    <li>• Accessibility</li>
+                                    <li>• SEO Optimization</li>
                                 </ul>
                             </div>
                         </div>
-
+            
+                        <!-- PHP -->
+                        <div class="group bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-l transition-all duration-300">
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="flex items-center">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" class="w-8 h-8 mr-3">
+                                    <h5 class="text-lg font-semibold text-gray-900 dark:text-white">PHP</h5>
+                                </div>
+                                <span class="text-orange-600 dark:text-orange-400 font-semibold">70%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+                                <div class="h-full bg-gradient-to-r from-orange-500 to-red-500 rounded-full" style="width: 70%"></div>
+                            </div>
+                            <div class="mt-4 text-sm text-gray-600 dark:text-gray-300">
+                                <ul class="space-y-1">
+                                    <li>• Object-Oriented Programming (OOP)</li>
+                                    <li>• Laravel Framework Proficiency</li>
+                                    <li>• RESTful API Development</li>
+                                </ul>
+                            </div>
+                        </div>
+            
                         <!-- CSS -->
                         <div class="group bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
                             <div class="flex items-center justify-between mb-4">
@@ -809,10 +826,10 @@
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="w-8 h-8 mr-3">
                                     <h5 class="text-lg font-semibold text-gray-900 dark:text-white">CSS3</h5>
                                 </div>
-                                <span class="text-blue-600 dark:text-blue-400 font-semibold">85%</span>
+                                <span class="text-blue-600 dark:text-blue-400 font-semibold">75%</span>
                             </div>
                             <div class="h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
-                                <div class="h-full bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full transform origin-left transition-transform duration-500 group-hover:scale-x-100" style="width: 85%"></div>
+                                <div class="h-full bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full" style="width: 75%"></div>
                             </div>
                             <div class="mt-4 text-sm text-gray-600 dark:text-gray-300">
                                 <ul class="space-y-1">
@@ -822,7 +839,7 @@
                                 </ul>
                             </div>
                         </div>
-
+            
                         <!-- JavaScript -->
                         <div class="group bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
                             <div class="flex items-center justify-between mb-4">
@@ -830,10 +847,10 @@
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-8 h-8 mr-3">
                                     <h5 class="text-lg font-semibold text-gray-900 dark:text-white">JavaScript</h5>
                                 </div>
-                                <span class="text-yellow-600 dark:text-yellow-400 font-semibold">80%</span>
+                                <span class="text-yellow-600 dark:text-yellow-400 font-semibold">65%</span>
                             </div>
                             <div class="h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
-                                <div class="h-full bg-gradient-to-r from-yellow-500 to-orange-500 rounded-full transform origin-left transition-transform duration-500 group-hover:scale-x-100" style="width: 80%"></div>
+                                <div class="h-full bg-gradient-to-r from-yellow-500 to-orange-500 rounded-full" style="width: 65%"></div>
                             </div>
                             <div class="mt-4 text-sm text-gray-600 dark:text-gray-300">
                                 <ul class="space-y-1">
@@ -842,9 +859,10 @@
                                     <li>• Async Programming</li>
                                 </ul>
                             </div>
-                    </div>
+                        </div>
                     </div>
                 </div>
+            
     
                 <!-- Frameworks & Libraries -->
                 <div class="mb-12">
@@ -852,7 +870,7 @@
                         <i class="fas fa-layer-group text-purple-500 mr-3"></i>
                         Frameworks & Libraries
                     </h4>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
                         <!-- Laravel -->
                         <div class="group bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
                             <div class="flex items-center justify-between mb-4">
@@ -881,7 +899,7 @@
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" class="w-8 h-8 mr-3">
                                     <h5 class="text-lg font-semibold text-gray-900 dark:text-white">Tailwind CSS</h5>
                                 </div>
-                                <span class="text-teal-600 dark:text-teal-400 font-semibold">85%</span>
+                                <span class="text-teal-600 dark:text-teal-400 font-semibold">60%</span>
                             </div>
                             <div class="h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
                                 <div class="h-full bg-gradient-to-r from-teal-500 to-green-500 rounded-full transform origin-left transition-transform duration-500 group-hover:scale-x-100" style="width: 85%"></div>
